@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quizzes disponibles</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Lista de Quizzes</h1>
+    <div>
+      <ol>
+        <% var quizzes = array %>
+        <% var i = 0 %>
+        <% for (i; i < quizzes.length; i++){ %>
+        <li>
+          Pregunta numero <%=quizzes[i].id%>. <%=quizzes[i].question %> : <%= quizzes[i].answer %>
+        </li>
+        <% } %>
+      </ol>
+    </div>
+  </body>
+</html>
